@@ -19,8 +19,8 @@ public class CME {
 		
 		// removeメソッド実行後に読み出しをすると
 		// ConcurrentModificationException例外が発生する
-		// "C"を削除した後、続けて"D"を読み込むのでその時点で例外が発生する
-		// returnで処理を終了させると回避できる
+		// removeした後、listを再度読み取ろうとしているので例外が発生する
+		// returnで意図的に処理を終了させると回避することはできる
 		
 		for (String str : list) {
 			System.out.println(str);
