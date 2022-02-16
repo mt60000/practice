@@ -7,13 +7,13 @@ import java.util.Random;
 
 class Radar {
 	public static void main(String[] args) throws IOException {
-		System.out.println("☆レーダー☆¥n");
+		System.out.println("☆レーダー☆");
 		System.out.println("ターゲットとして 0～100 のうち1つの数が設定されます。"
-			+ "探知する位置と範囲を入力してターゲットを見つけてください。¥n");
-		System.out.println("ターゲットと探索位置の差が探索範囲以下であればヒットです。探索範囲より大きければ、はずれです。¥n");
-		System.out.println("探索位置とターゲットが一致すれば正解です。¥n");
-		System.out.println("-----------------------------------------¥n");
-		System.out.println("ゲームを開始します。¥n");
+			+ "探知する位置と範囲を入力してターゲットを見つけてください。");
+		System.out.println("ターゲットと探索位置の差が探索範囲以下であればヒットです。探索範囲より大きければ、はずれです。");
+		System.out.println("探索位置とターゲットが一致すれば正解です。");
+		System.out.println("-----------------------------------------");
+		System.out.println("ゲームを開始します。");
 		
 		Random RandObj = new Random();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -40,12 +40,12 @@ class Radar {
 				
 				if (distance == 0) {
 					System.out.println("おめでとう！ "
-							+ turn + "回目で正解です！¥n");
+							+ turn + "回目で正解です！");
 					break;
 				} else if (distance <= range) {
-					System.out.println("ヒットしました。¥n¥n");
+					System.out.println("ヒットしました。");
 				} else {
-					System.out.println("はずれました。¥n¥n");
+					System.out.println("はずれました。");
 				}
 			}
 			
